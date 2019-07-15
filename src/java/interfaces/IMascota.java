@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  *
- * @author USUARIO
+ * @author ESTHER
  */
 public interface IMascota {
 

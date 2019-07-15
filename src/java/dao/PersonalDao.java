@@ -15,7 +15,7 @@ import utilitarios.HibernateUtil;
 
 /**
  *
- * @author USUARIO
+ * @author ESTHER
  */
 public class PersonalDao implements IPersonal{
      @Override

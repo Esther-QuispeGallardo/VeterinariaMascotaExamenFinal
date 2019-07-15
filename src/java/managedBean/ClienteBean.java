@@ -17,7 +17,7 @@ import org.hibernate.HibernateException;
 
 /**
  *
- * @author USUARIO
+ * @author ESTHER
  */
 @ManagedBean
 @ViewScoped

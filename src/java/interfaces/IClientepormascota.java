@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 /**
  *
- * @author USUARIO
+ * @author ESTHER
  */
 public interface IClientepormascota {
     public abstract boolean guardarClientepormascota(Clientepormascota mascotaporcliente);

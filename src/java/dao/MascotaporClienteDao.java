@@ -13,10 +13,9 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import utilitarios.HibernateUtil;
-
 /**
  *
- * @author USUARIO
+ * @author ESTHER
  */
 public class MascotaporClienteDao implements IClientepormascota {
 

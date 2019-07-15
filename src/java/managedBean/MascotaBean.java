@@ -15,10 +15,9 @@ import javax.faces.bean.RequestScoped;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import org.hibernate.HibernateException;
-
 /**
  *
- * @author USUARIO
+ * @author ESTHER
  */
 @ManagedBean
 //@RequestScoped

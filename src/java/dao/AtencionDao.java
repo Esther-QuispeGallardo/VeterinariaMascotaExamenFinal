@@ -10,7 +10,7 @@ import utilitarios.HibernateUtil;
 
 /**
  *
- * @author USUARIO
+ * @author ESTHER
  */
 public class AtencionDao implements IAtencion {
 

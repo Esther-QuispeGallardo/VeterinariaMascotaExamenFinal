@@ -21,10 +21,9 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import org.hibernate.HibernateException;
-
 /**
  *
- * @author USUARIO
+ * @author ESTHER
  */
 @ManagedBean
 @ViewScoped
@@ -39,13 +38,13 @@ public class AtencionBean implements Serializable{
     private ArrayList listamascotas;
     private int idMascota;
     
+      private Personal personal;
     private ArrayList listapersonales; 
      private int idPersonal;
      
      
   
     private Clientepormascota mascotaporcliente;
-    private Personal personal;
     private ClientepormascotaId mascotaporclienteid;
     
     public AtencionBean(){
@@ -79,13 +78,12 @@ public class AtencionBean implements Serializable{
 
     public String guardarAtencion() {
         try {
-
             AtencionDao atencionDao = new AtencionDao();
-            
-            mascotaporclienteid.setClienteIdCliente(idCliente);
-            mascotaporclienteid.setMascotaIdMascota(idMascota);
-            personal.setIdPersonal(idPersonal);
             mascotaporcliente.setId(mascotaporclienteid);
+            personal.setIdPersonal(idPersonal);
+            atencion.setClientepormascota(mascotaporcliente);
+            atencion.setPersonal(personal);
+            atencion.setClientepormascota(mascotaporcliente);
             boolean respuesta = atencionDao.guardarAtencion(atencion);
             if (respuesta) {
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Se registro con éxito"));
@@ -211,5 +209,13 @@ public class AtencionBean implements Serializable{
 
     public void setMascotaporclienteid(ClientepormascotaId mascotaporclienteid) {
         this.mascotaporclienteid = mascotaporclienteid;
+    }
+
+    public Personal getPersonal() {
+        return personal;
+    }
+
+    public void setPersonal(Personal personal) {
+        this.personal = personal;
     }
 }

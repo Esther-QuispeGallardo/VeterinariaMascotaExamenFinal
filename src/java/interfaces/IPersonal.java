@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author USUARIO
+ * @author ESTHER
  */
 public interface IPersonal {
     
